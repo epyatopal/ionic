@@ -1,0 +1,56 @@
+<ion-view>
+  <ion-content >
+    <section class="blue-back text-center block-bottom">
+      <div class="title white size25 line100">
+        <span class="size40">1</span>
+        <span translate="title"></span>
+      </div>
+      <div class="auto-marg wigth75 padding-small-bottom">
+        <input type="text" ng-model="signupData.fname" class="round-btn padding025 input-login" placeholder="{{'fname' | translate}}">
+      </div>
+      <div class="auto-marg wigth75 padding-small-bottom">
+        <input type="text" ng-model="signupData.lname" class="round-btn padding025 input-login" placeholder="{{'lname' | translate}}">
+      </div>
+      <div class="auto-marg wigth75 padding-small-bottom">
+        <input type="number" ng-model="signupData.phone" class="round-btn padding025 input-login" placeholder="{{'phone' | translate}}">
+      </div>
+      <div class="auto-marg wigth75 padding-big-bottom">
+        <input type="email" ng-model="signupData.email" class="round-btn padding025 input-login" placeholder="Email">
+      </div>
+    </section>
+    <section class="block-bottom-gray">
+      <div class="text-center padding-big-top" >
+        <h4 class="gray-text" translate="iam"></h4>
+      </div>
+      <div class="row ">
+        <div class="col text-center">
+          <button translate="owner" ng-class="{'active-check-btn': activeOwner}" ng-click="checkRole('activeOwner')" class="size14 button button-outline wigth100 button-stable round-btn input-login"></button>
+        </div>
+        <div class="col text-center">
+          <button ng-class="{'active-check-btn': activeManager}" ng-click="checkRole('activeManager')"  class="size14 button button-outline wigth100 padding010 button-stable round-btn input-login">
+            Manager
+          </button>
+        </div>
+        <div class="col text-center">
+          <button ng-class="{'active-check-btn': activeChef}" ng-click="checkRole('activeChef')" class="size14 button button-outline wigth100 button-stable round-btn input-login">
+            Chef
+          </button>
+        </div>
+      </div>
+      <div class="text-center padding-big-bottom">
+        <button translate="other" ng-class="{'active-check-btn': activeOther}" ng-click="checkRole('activeOther')" class="size14 button button-outline button-stable padding025 round-btn input-login"></button>
+      </div>
+    </section>
+    <section>
+      <div class="text-center padding-big-top padding-small-bottom" >
+        <h4 class="gray-text">Account Information</h4>
+      </div>
+      <div class="auto-marg wigth75 padding-small-bottom">
+        <input type="password" ng-model="signupData.password" class="round-btn padding025 input-login border-gray" placeholder="{{'password' | translate}}">
+      </div>
+      <div class="text-center padding-big-bottom">
+          <button class="button button-dark-blue round-btn padding025" translate="continue"> Continue</button>
+      </div>
+    </section>
+  </ion-content>
+</ion-view>

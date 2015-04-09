@@ -1,0 +1,49 @@
+<ion-view class="big-back">
+  <!--<ion-header-bar>-->
+    <!--<h1 class="title">Login</h1>-->
+    <!--<div class="buttons">-->
+      <!--<button class="button button-clear">Close</button>-->
+    <!--</div>-->
+  <!--</ion-header-bar>-->
+
+  <ion-content class="scroll-all">
+    <div class="turn" translate="turn"></div>
+      <div class="text-center row">
+        <div class="col col-25 col-offset-20">
+          <button class="button white button-clear" ng-class="{'active-btn': activeEnglish}" ng-click="changeLanguage('en')" translate="lng_btn_eng"></button>
+        </div>
+        <div class="col col-10 input-login white">|</div>
+        <div class="col col-25">
+          <button class="button button-clear white" ng-class="{'active-btn': !activeEnglish}" ng-click="changeLanguage('es')" translate="lng_btn_esp"></button>
+        </div>
+      </div>
+      <div class="text-center padding-small-bottom">
+        <img src="../images/logo.png" class="logo-img padding-small-bottom">
+        <div class="white size16" translate="simple_manage"></div>
+      </div>
+
+      <form ng-submit="doLogin()" class="padding-small-bottom">
+        <div class="auto-marg wigth75 padding-small-bottom" ng-show="activeEnglish">
+          <input type="text" ng-model="loginData.username" class="round-btn padding025 input-login" translate placeholder="Username">
+        </div>
+        <div class="auto-marg wigth75 padding-small-bottom" ng-show="!activeEnglish">
+          <input type="text" ng-model="loginData.username" class="round-btn padding025 input-login" translate placeholder="Teléfono Celular">
+        </div>
+        <div class="auto-marg wigth75 padding-small-bottom" ng-show="activeEnglish">
+          <input type="password" ng-model="loginData.password" class="round-btn padding025 input-login" translate placeholder="Password">
+        </div>
+        <div class="auto-marg wigth75 padding-small-bottom" ng-show="!activeEnglish">
+          <input type="password" ng-model="loginData.password" class="round-btn padding025 input-login" translate placeholder="Contraseña">
+        </div>
+        <div class="text-center">
+          <button class="button button-black round-btn padding025" type="submit" translate="log_in"></button>
+        </div>
+      </form>
+      <div class="text-center padding-big-bottom">
+        <div class="padding-small-bottom white size16" translate="new_invoice"></div>
+        <div>
+          <button class="button button-dark-blue round-btn padding025" translate="create_acc" ui-sref="app.signup"></button>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

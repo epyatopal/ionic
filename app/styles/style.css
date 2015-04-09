@@ -1,0 +1,150 @@
+/* Empty. Add your own CSS if you like */
+/*////////////////////////start login page///////////////////////*/
+.round-btn{
+  border-radius: 25px;
+}
+.padding025{
+  padding: 0 25px!important;
+}
+.padding010{
+  padding: 0 10px;
+}
+.big-back{
+  background: url("../images/image2.png") no-repeat;
+  background-size: cover;
+}
+.wigth75{
+  width: 75%;
+}
+.auto-marg{
+  margin: auto;
+}
+.padding-big-bottom{
+  padding-bottom: 25px;
+}
+.padding-small-bottom{
+  padding-bottom: 15px;
+}
+.input-login{
+  line-height: 42px;
+  min-height: 47px;
+}
+.button-black{
+  background: #000000;
+  border: #000000;
+  color: #ffffff;
+}
+.button-dark-blue{
+  background: #2c629f;
+  border: #2c629f;
+  color: #ffffff;
+}
+.white{
+  color: #ffffff!important;
+}
+.size16{
+  font-size: 16px;
+}
+.logo-img{
+  max-width: 200px;
+}
+.right-border{
+  border-right: 1px solid #ffffff!important;
+}
+.active-btn{
+  font-weight: bold;
+}
+.turn {
+  -moz-transform: rotate(-45deg); /* Для Firefox */
+  -ms-transform: rotate(-45deg); /* Для IE */
+  -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-45deg); /* Для Opera */
+  transform: rotate(-45deg);
+  background: #ff4f4f;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10% -25% 0 -25%;
+}
+/*////////////////////////finish login page///////////////////////*/
+
+/*////////////////////////start signup page///////////////////////*/
+.blue-back{
+  background: url("../images/blue-back.png") no-repeat 75% 75%;
+  background-size: cover;
+  /*background-position: ;*/
+}
+/*.padding015{*/
+  /*padding: 0 15px!important;*/
+/*}*/
+.size25{
+  font-size: 25px;
+}
+.size14{
+  font-size: 14px;
+}
+.size40{
+  font-size: 40px;
+}
+.line100{
+  line-height: 100px;
+}
+.block-bottom{
+  border: 1px solid #0e456a;
+  padding: 20px;
+  position: relative;
+}
+.wigth100{
+  width: 100%;
+}
+.block-bottom::before, .block-bottom::after {
+  content: '';
+  position: absolute;
+  left: 43%;
+  bottom: -40px;
+  border: 25px solid transparent;
+  border-top: 15px solid #0e456a;
+  z-index: 10;
+}
+.block-bottom::after {
+  border-top: 15px solid #0e456a;
+  bottom: -40px;
+}
+.padding-big-top{
+  padding-top: 20px;
+}
+.gray-text{
+  color: #8c8c8c;
+}
+.active-check-btn{
+  background-color: #3b6da6!important;
+  border: #3b6da6!important;
+  color: #ffffff!important;
+}
+
+.block-bottom-gray {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  position: relative;
+}
+.block-bottom-gray::before, .block-bottom-gray::after {
+  content: '';
+  position: absolute;
+  left: 43%;
+  bottom: -40px;
+  border: 25px solid transparent;
+  border-top: 15px solid #dddddd;
+}
+.block-bottom-gray::after {
+  border-top: 15px solid white;
+  bottom: -38px;
+}
+.border-gray{
+  border: 1px solid #dddddd!important;
+}
+
+
+/*////////////////////////finish signup page///////////////////////*/
